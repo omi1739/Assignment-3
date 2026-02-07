@@ -7,5 +7,25 @@ function  analyzeText(str) {
         return 'Invalid';
     }
      
+    let words = str.split(" ");
+    let longestWord = words[0];
+
+    for(let word of words ){
+        
+        if(word.length > longestWord.length){
+            longestWord= word;
+        }   
+
+       
+    }
+
+     let token = str.split(" ").join("").length;
+    
+        return {
+           longwords: longestWord,
+           token :token
+        };
 
 }
+
+
